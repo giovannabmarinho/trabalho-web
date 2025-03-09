@@ -1,1 +1,2 @@
-"# trabalho-web" 
+Esse é o meu projeto de avaliação da cadeira de Fundamentos de Sistema Web - PUCRS, onde desenvolvi um site para um mercado, inicialmente utilizando apenas HTML, onde é possível visualizar a página inicial com os serviços ofertados pelo mercado (tele-entrega e retirada no local), e outra página com os produtos que estão disponíveis para venda, a descrição e preço de cada produto, um campo para determinar a quantidade de cada produto e um botão para adicionar ao carrinho.
+Nas páginas do projeto constam o cabeçalho com nome do mercado e o rodapé com informações de contato e links de navegação.
