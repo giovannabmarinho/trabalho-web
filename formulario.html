@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Formulário</title>
+</head>
+
+<body>
+    <h1 align="center"><strong>😼 Mercado do gatinho 🐾</strong></h1>
+    <h3 align="center">Faça suas compras em nosso mercado, com preços mais baratos e produtos fresquinhos. Você pode escolher por <strong>retirar no local</strong> ou <strong> tele-entrega</strong>. 🛒</h3>
+  <hr>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html"> Índice </a></li>
+      <li><a href="produtos.html"> Produtos</a></li>
+      <li> <a href="formulario.html"> Formulário </a></li>
+    </ul>
+  </nav>
+  <hr>
+  <br>
+  <p align="center"> Formulário para clientes </p>
+  <h3 align="center"> Preencha seus dados para que possamos recebê-lo em nossa loja para fazer a retirada dos seus itens, ou para que possamos fazer a tele-entrega dos seus itens.</h3>
+
+  <form action="https://formsubmit.co/gibarbosa.mf@gmail.com" method="POST">
+    <fieldset>
+      <legend>Informações do cliente</legend>
+      <div class="conteudo-form">
+        <div>
+          <label> Digite seu nome: </label>
+          <input type="text" name="Nome" placeholder="Nome completo" required>
+        </div>
+        <div>
+          <label> Digite sua idade: </label>
+          <input type="number" name="Idade" min="0" max="100" placeholder="Idade" required>
+        </div>
+        <div>
+          <label> Digite seu CPF:</label>
+          <input type="text" name="CPF" placeholder="CPF" pattern="[0-9]{11}" required>
+        </div>
+        <div>
+          <label> Digite seu e-mail:</label>
+          <input type="text" name="email" placeholder="Digite seu e-mail" required>
+        </div>
+        <div>
+          <label> Informe o sexo: </label>
+          <label> Feminino</label>
+          <input type="radio" value="Feminino" />
+          <label> Masculino</label>
+          <input type="radio" value="Masculino" />
+        </div>
+        <div>
+          <label> Informe seu telefone:</label>
+          <input type="tel" value="telefone" placeholder="DDDxxxxxxxxx" pattern="[0-9]{11}" required>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend> Endereço do cliente </legend>
+      <div class="conteudo-form">
+        <div>
+          <label> Digite o nome da rua: </label>
+          <input type="text" name="Rua" placeholder="Nome da rua" required>
+        </div>
+        <div>
+          <label> Digite o número da residência: </label>
+          <input type="text" name="Rua" placeholder="Número da casa" required>
+        </div>
+        <div>
+          <label> Digite o CEP da rua: </label>
+          <input type="text" name="CEP" placeholder="CEP" required>
+        </div>
+        <div>
+          <label> Cidade: </label>
+          <input type="text" name="Cidade" placeholder="Cidade" required>
+        </div>
+        <div>
+          <label> Estado: </label>
+          <select name="Estado">
+            <option value="AC">Acre</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="GO">Goias</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RR">Roraima</option>
+            <option value="RO">Rondônia</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+        </div>
+    </fieldset>
+    <fieldset>
+      <legend> Detalhes sobre a retirada/tele-entrega</legend>
+      <div class="conteudo-form">
+        <div>
+          <label> Como conheceu nosso mercado?</label>
+          <select name="Onde cliente nos conheceu">
+            <option value="Redes sociais"> Redes sociais</option>
+            <option value="Conhecidos/família/amigos"> Conhecidos/família/amigos</option>
+            <option value="Panfletos"> Panfleto</option>
+            <option value="Jornal"> Jornal</option>
+          </select>
+        </div>
+        <div>
+          <label> Deseja fazer a retirada no local ou tele-entrega?</label>
+          <select name="Opção de retirada">
+            <option value="Tele-entrega"> Tele-entrega</option required>
+            <option value="Retirada no local"> Retirada no local</option required>
+          </select>
+        </div>
+        <div>
+          <label> Escolha uma data para o serviço solicitado </label>
+          <input type="datetime-local" name="Data/horario_do_serviço_solicitado" required />
+        </div>
+    </fieldset>
+      <fieldset>
+      <legend> Instruções de entrega </legend>
+      <div class="conteudo-form">
+            <label> Deixe aqui seu comentário com instruções de entrega: </label>
+              <textarea name="Instruções" cols="40" rows="4" placeholder="Instruções"></textarea>
+          </div> 
+      </fieldset>
+    <br>
+    <button type="submit"> Enviar formulário </button>
+    <br>
+  </form>
+</body>
+
+<br><br><br>
+
+<footer>
+    <div class="rodape-pagina">
+      <br>
+        <p align="center"> Copyright © 2025. Giovanna Barbosa Marinho's Company. Todos os direitos reservados. </p>
+        <p align="center"> Contato: mercadodogatinho@mail.com.br | Telefone: (51) 99999-9999 </p>
+      <br><br>
+        <p align="center"> <a href="produtos.html"> Página de produtos</a> 🍉 | <a href="index.html"> Página inicial 🛒</a></p>
+      <br>
+    </div>  
+</footer>
+
+</html>
